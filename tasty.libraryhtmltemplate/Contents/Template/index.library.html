@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0">
+        <meta name="author" content="$fullName">
+        <meta name="columns-per-page" content="1">
+
+        <title>$fullName's library</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,800" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/tasty.css">
+
+        <!--<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />-->
+        <!--<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />-->
+    </head>
+    <body>
+        <div class="header">
+            <h1>$fullName's library</h1>
+            <div class="stats">$totalItems, last updated $publishDate</div>
+
+            <div class="navigation">
+                <form id="navigation-form" method="post" action="#">
+                    <label for="shelf-selector">Shelf:</label>
+                    $shelfNavigationPopup
+
+                    <input type="search" name="filter" id="filter" placeholder="Search">
+                </form>
+            </div>
+        </div>
+
+        <div class="shelves">
+            <div id="media">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="medium" id="medium$uuidString" data-title="$title" data-author="$creatorsCompositeString">
+                                    <div class="medium-zoom">
+                                        <div class="cover-overlay">$coverImage128</div>
+                                        <span class="medium-title">$title</span>
+                                        <span class="medium-author">$creatorsCompositeString</span>
+                                    </div>
+                                    <div class="cover-wrap">
+                                        <div class="cover-overlay">$coverImage128</div>
+                                    </div>
+                                    <div class="medium-info">
+                                        <span class="medium-title">$title</span>
+                                        <span class="medium-author">$creatorsCompositeString</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            <small>Made with <a href="http://www.delicious-monster.com">Delicious Library</a>. <a href="https://github.com/danielgwood/tasty">Tasty</a>&nbsp;theme&nbsp;by&nbsp;<a href="https://twitter.com/danielgwood">@danielgwood</a>.</small>
+        </div>
+
+        <script src="js/$.min.js"></script>
+        <script src="js/blazy.min.js"></script>
+        <script src="js/tasty.js"></script>
+    </body>
+</html>
