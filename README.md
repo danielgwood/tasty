@@ -2,16 +2,18 @@ Tasty
 =====
 A minimal Delicious Library 3 site template with search facility.
 
+[Demo](https://danielgwood.com/sandbox/tasty-demo/)
+
 I've fiddled with publishing templates for DL on and off since 2013 or something, this is the closest I ever got to finishing one. I don't have a Mac at home any more, so it's abandonware now (just like Delicious Library!), but if you want it, you're welcome to it.
 
 Installing
 ----------
-Requires Delicious Library 3. Tested with 3.7.
+Requires [Delicious Library 3](https://www.delicious-monster.com/). Tested with 3.7.
 
 1. Download and unzip
 2. Open Delicious Library 3, and go to the publishing view
 3. Right-click the template list, go to "Open Templates Directory"
-4. Copy the "tasty.libraryhtmltemplate" folder into this directory
+4. Copy the "tasty.libraryhtmltemplate" folder in
 5. Close and reopen Delicious Library
 6. It should appear in list (go left/right using keyboard, the visual listing is a bit odd)
 6. Change the selected template to "Tasty"
@@ -31,7 +33,7 @@ Tips for making DL themes
 - Live preview in Delicious Library can really help (if you do something it doesn't like it's more immediately obvious), but you need to scroll up and down sometimes to give it a poke into working.
 - Sometimes Delicious gives you errors! But not anywhere you'd notice. They're in Console.app if you look though.
 - You can find the bundled default templates in: `app bundle - show package contents - Contents -> Resources -> Templates`
-- There's a full list of supported fields in this repository.
+- There's a [full list of supported fields](List of fields.md) in this repository.
 - If your template doesn't work:
     + Is the theme untitled? check template strings
     + Does the theme not appear at all? check file structure (it shouldn't have any unexpected files)
